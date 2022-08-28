@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title> Bienfait's blog </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="padding: 1.5em; background-color: #001230; z-index:2;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Images/bienfait_pic1.jpg" class="img-fluid rounded-top" alt="No image so far" height="10%"
+                    width="10%">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left:-5%;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro"> About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"> Contact </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articles"> Articles </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mentors"> Mentors and Supervisors </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" id="intro">
+            <h3 style="background-image: linear-gradient(to left, #002E62, green, green, #002E62);"> Biography </h3>
+            <div class="col-sm-12 col-md-6">
+                <div class="card" style="background-color: #002E62; color:white;">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-size: 3em; padding-top:1em; "> Bienfait Kabuyaya Isamura
+                        </h4>
+                        <p class="card-text" style="font-size:1.3em;"> is a 1 st year PhD candidate in Theoretical
+                            Chemistry at the University of
+                            Manchester. He obtained his master of science degree in Chemistry with distinction from
+                            Rhodes
+                            University and was awarded the 2022 S2A3 medal for original research at master’s level. BKI
+                            has
+                            published nine research articles, among which five first-authored articles. His research
+                            interest
+                            includes
+                            the investigation of noncovalent interactions, method benchmarking and the development of
+                            new force
+                            fields. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card" style="background-color: #002E62; color:white;">
+                    <div class="card-body"
+                        style="margin:1em; background-image: linear-gradient(to left, #002E62, #D3B000, #002E62);">
+                        <img src="Images/bienfait_pic1.jpg" alt="Bienfait's picture" height="70%" width="100%"
+                            style="border-radius: 50%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="articles">
+            <h3 style="background-image: linear-gradient(to left, #002E62, green, green, #002E62);"> Articles </h3>
+            <div class="card">
+                <div class="card-header">
+                    1. Interplay between Sigma-hole, Cation-pi and Anion-H-C interactions in [2,2] paracyclophane
+                    complexes
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Jules Tshishimbi Muya,
+                        Bienfait Kabuyaya Isamura, Issofa Patouossa and
+                        Minh Tho Nguyen
+                    </p>
+                    <span style="font-weight: bold;"> Publisher: </span> Journal of Physical Chemistry A <br>
+                    <span style="font-weight: bold;"> Date: </span> May 2020 <br>
+                    <span style="font-weight: bold;"> Citation: </span> 2 <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    2. Structure, stability and bonding of leapfrog B 24 0,±1,±2
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Jules Tshishimbi Muya,
+                        Bienfait Kabuyaya Isamura, Issofa Patouossa, Minh Tho Nguyen and
+                        Arnout Ceulemans
+                    </p>
+                    <span style="font-weight: bold;"> Publisher: </span> Journal of Computational Chemistry <br>
+                    <span style="font-weight: bold;"> Date: </span> January 2021 <br>
+                    <span style="font-weight: bold;"> Citation: </span> 1 <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    3. Regioselectivity, chemical bonding and physical nature of interactions between imidazole and
+                    XAH (X=H, F, Cl, Br, CH 3 ; A=S, Se, Te)
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura,
+                        Jules Tshishimbi Muya and Kevin Alan Lobb
+                    </p>
+                    <span style="font-weight: bold;"> Publisher: </span> Molecular Physics <br>
+                    <span style="font-weight: bold;"> Date: </span> January 2022 <br>
+                    <span style="font-weight: bold;"> Citation: </span> 1 <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    4. New insights into the (a)synchronicity of Diels-Alder reactions: a theoretical study based on the
+                    reaction force analysis and atomic resolution of energy derivatives
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura
+                        and Kevin Alan Lobb
+                    </p>
+                    <span style="font-weight: bold;"> Publisher: </span> Molecules <br>
+                    <span style="font-weight: bold;"> Date: </span> February 2022 <br>
+                    <span style="font-weight: bold;"> Citation: </span> 0 <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    5. Unveiling the reactivity of truxillic and truxinic acids (TXAs): deprotonation, anion…H-O,
+                    cation…O and cation…pi interactions in TXA 0 …Y + and TXA 0 …Z - complexes (Y=Li, Na, K and
+                    Z=F,Cl,Br)
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura,
+                        Issofa Patouossa, Jules Tshishimbi Muya and Kevin Alan Lobb
+                    </p>
+                    <span style="font-weight: bold;"> Publisher: </span> Structural Chemistry <br>
+                    <span style="font-weight: bold;"> Date: </span> May 2022 <br>
+                    <span style="font-weight: bold;"> Citation: </span> 1 <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    6. AMADAR: a python-based package for large scale prediction of Diels-Alder transition state
+                    geometries and IRC path analysis
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura
+                        and Kevin Alan Lobb
+                    </p>
+                    <span style="font-weight: bold;"> Publisher: </span> Journal of Cheminformatics <br>
+                    <span style="font-weight: bold;"> Date: </span> January 2022 <br>
+                    <span style="font-weight: bold;"> Citation: </span> 0 <br>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    7. Spectro-electrochemical, fluorimetric and biothermodynamic evaluation of pharmacologically
+                    active morpholine scaffold single crystal ligand and its metal(II) complexes: a comparative study on
+                    in-
+                    vitro and in-silico screening towards DNA/BSA/SARS-CoV-19
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Karunganathan Sakthikumar,
+                        Rui Werner Macedo Krause, Bienfait Kabuyaya Isamura,
+                        Dhaveethu Raja and Shanmuganarayanan Athimoolam
+                    </p>
+                    <span style="font-weight: bold;"> Publisher: </span> Journal of Inorganic Biochemistry <br>
+                    <span style="font-weight: bold;"> Date: </span> August 2022 <br>
+                    <span style="font-weight: bold;"> Citation: </span> 0 <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    8. In-silico drug repurposing of anticancer drug 5-FU and analogues against SARS-CoV-2 main
+                    protease: molecular docking, molecular dynamics simulation, pharmacokinetics and chemical reactivity
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura
+                        and Kevin Alan Lobb
+                    </p>
+                    <span style="font-weight: bold;"> Publisher: </span> Advances and Applications in Bioinformatics and
+                    Chemistry <br>
+                    <span style="font-weight: bold;"> Date: </span> August 2022 <br>
+                    <span style="font-weight: bold;"> Citation: </span> 0 <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    9. A multiscale ONIOM study of the Buckminsterfullerene (C60) Diels-Alder reaction: from model
+                    design to reaction path analysis
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura
+                        and Kevin Alan Lobb
+                    </p>
+                    <span style="font-weight: bold;"> Publisher: </span> Journal of Molecular Modelling <br>
+                    <span style="font-weight: bold;"> Date: </span> (Accepted) <br>
+                    <span style="font-weight: bold;"> Citation: </span> 0 <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" id="contact">
+            <h3 style="background-image: linear-gradient(to left, #002E62, green, green, #002E62);"> Contact </h3>
+            <div class="col-sm-12 col-md-3 card">
+                <div class="card-body">
+                    <i class="bi bi-twitter" id="twitter"></i>
+                    <p class="card-text"> <a href="https://mobile.twitter.com/isamurabienfait" style="text-decoration:none; color:yellow;"> Twitter </a> </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 card">
+                <div class="card-body">
+                    <i class="bi bi-envelope-fill" id="gmail"></i>
+                    <p class="card-text"> <a href="mailto: isamurabft@gmail.com" style="text-decoration:none; color:yellow;"> Gmail </a> </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 card">
+                <div class="card-body">
+                    <i class="bi bi-linkedin"></i>
+                    <p class="card-text"> <a href=" https://www.linkedin.com/in/bienfait-kabuyaya-isamura-46a6b9154/" style="text-decoration:none; color:yellow;"> LinkedIn </a> </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="mentors">
+            <h3 style="background-image: linear-gradient(to left, #002E62, green, green, #002E62);"> Mentors and
+                Supervisors </h3>
+            <div class="card">
+                <div class="card-body">
+                    <ul style="list-style-type: '*';">
+                        <li> Prof Minh Tho Nguyen (M) </li>
+                        <li> Prof Paul Popelier (S &amp; M) </li>
+                        <li> Prof Alberto Saiani (S) </li>
+                        <li> Prof Virima Mudogo (M) </li>
+                        <li> Prof Kevin Alan Lobb (S) </li>
+                        <li> Prof Jules Muya Tshishimbi (S)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer style="color:white; padding:2em; text-align:center; background-color:#001230;">
+            <p>Copyright &copy; 2022 Bienfait Kabuyaya Isamura </p>
+        </footer>
+    </div>
+</body>
+<script>
+
+</script>
+
+</html>

@@ -1,0 +1,96 @@
+body {
+    margin-top: 0%;
+    background-color: #002E62;
+}
+
+.navbar .nav-item{
+    color: white;
+}
+
+#intro, #articles, #mentors, #contact {
+    color: white;
+    margin: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#intro .card {
+    border: none;
+}
+
+#intro .card:hover {
+    border: none;
+    animation-name: card-animation;
+    animation-duration: 3s;
+}
+
+@keyframes card-animation {
+    0% {
+        border: none;
+    }
+
+    33% {
+        transform: translateX(-5%);
+        border: none;
+    }
+
+    66% {
+        transform: translateX(+5%);
+        border: none;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+#articles .card{
+    margin:0.5em;
+    background-color: #002E62;
+    border: none;
+}
+
+#articles .card .card-header{
+    margin:1em 1em 0em 1em;
+    background-color: #001230;
+}
+
+#articles .card .card-body{
+    margin-left:1em;
+    margin-right:1em;
+    background-image: linear-gradient(to left, #001230, #002E62,#002E62, #001230);
+    padding:1em;
+}
+
+#articles .card .card-footer{
+    margin-left:1em;
+    margin-right:1em;
+    background-color: black;
+}
+
+#mentors .card{
+    margin:0.5em;
+    background-color: #002E62;
+    border: none;
+}
+
+#mentors .card .card-header{
+    margin:1em 1em 0em 1em;
+    background-color: #001230;
+}
+
+#mentors .card li{
+    padding: 0.5em;
+}
+
+#contact .card{
+    margin:0.5em;
+    background-color: #002E62;
+    border: none;
+}
+
+#contact .card .card-body{
+    margin:1em 1em 0em 1em;
+    background-color: #001230;
+    border-radius: 5%;
+}
