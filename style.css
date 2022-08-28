@@ -1,6 +1,8 @@
 body {
     margin-top: 0%;
     background-color: #002E62;
+    margin-left:-0.5em ;
+    margin-right: -0.5em;
 }
 
 .navbar .nav-item{
