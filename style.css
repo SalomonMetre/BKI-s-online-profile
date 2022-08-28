@@ -10,8 +10,8 @@ body {
 #intro, #articles, #mentors, #contact {
     color: white;
     margin: 1em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 0em;
+    padding-right: 0em;
 }
 
 #intro .card {
