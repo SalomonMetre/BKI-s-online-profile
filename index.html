@@ -1,270 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8"
-        src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <title>Bienfait Kabuyaya Isamura - Theoretical Chemistry Researcher</title>
     <link rel="stylesheet" href="style.css">
-    <title> Bienfait's blog </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark" style="padding: 1.5em; background-color: #001230; z-index:2;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="Images/bienfait_pic1.jpg" class="img-fluid rounded-top" alt="No image so far" height="10%"
-                    width="10%">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left:-5%;">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#intro"> Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#intro"> About </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact"> Contact </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#articles"> Articles </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#mentors"> Mentors and Supervisors </a>
-                    </li>
-                </ul>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">BKI</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row" id="intro">
-            <h3 style="background-image: linear-gradient(to left, #002E62, green, green, #002E62);"> Biography </h3>
-            <div class="col-sm-12 col-md-6">
-                <div class="card" style="background-color: #002E62; color:white;">
-                    <div class="card-body">
-                        <h4 class="card-title" style="font-size: 3em; padding-top:1em; "> Bienfait Kabuyaya Isamura
-                        </h4>
-                        <p class="card-text" style="font-size:1.3em;"> is a 1 st year PhD candidate in Theoretical
-                            Chemistry at the University of
-                            Manchester. He obtained his master of science degree in Chemistry with distinction from
-                            Rhodes
-                            University and was awarded the 2022 S2A3 medal for original research at master’s level. BKI
-                            has
-                            published nine research articles, among which five first-authored articles. His research
-                            interest
-                            includes
-                            the investigation of noncovalent interactions, method benchmarking and the development of
-                            new force
-                            fields. </p>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="highlight">Bienfait Kabuyaya</span>
+                        <br>Isamura
+                    </h1>
+                    <p class="hero-subtitle">PhD Candidate in Theoretical Chemistry</p>
+                    <p class="hero-description">
+                        Pioneering the intersection of machine learning and computational chemistry through 
+                        physics-informed force fields and innovative algorithmic approaches.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#research" class="btn btn-primary">Explore Research</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Publications</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">PhD</span>
+                            <span class="stat-label">University of Manchester</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">FFLUX</span>
+                            <span class="stat-label">ML Force Field</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-carousel-container">
+                        <div class="carousel-slide">
+                            <img src="Images/20250513_150630461.JPG" alt="Bienfait Kabuyaya Isamura 1" class="carousel-image">
+                            <img src="Images/20250530_173655089.JPG" alt="Bienfait Kabuyaya Isamura 2" class="carousel-image">
+                            <img src="Images/20250612_153516125.JPG" alt="Bienfait Kabuyaya Isamura 3" class="carousel-image">
+                        </div>
+                        <button id="prevBtn" class="carousel-btn prev-btn">&lt;</button>
+                        <button id="nextBtn" class="carousel-btn next-btn">&gt;</button>
+                        <div class="carousel-dots">
+                            <span class="dot active" data-slide-index="0"></span>
+                            <span class="dot" data-slide-index="1"></span>
+                            <span class="dot" data-slide-index="2"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="card" style="background-color: #002E62; color:white;">
-                    <div class="card-body"
-                        style="margin:1em; background-image: linear-gradient(to left, #002E62, #D3B000, #002E62);">
-                        <img src="Images/bienfait_pic1.jpg" alt="Bienfait's picture" height="70%" width="100%"
-                            style="border-radius: 50%;">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Bridging theoretical chemistry and machine learning</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I am a PhD candidate in Theoretical Chemistry at the University of Manchester, 
+                        specializing in the design, implementation, and application of machine learning 
+                        algorithms in computational chemistry. My current focus is on developing FFLUX, 
+                        a physics-informed machine-learned force field that represents a significant 
+                        advancement in molecular simulation methodologies.
+                    </p>
+                    
+                    <div class="education-timeline">
+                        <h3>Education & Achievements</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>PhD in Theoretical Chemistry</h4>
+                                <p>University of Manchester (Current)</p>
+                                <small>Focus: Physics-informed ML force fields (FFLUX)</small>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>MSc in Computational Chemistry</h4>
+                                <p>Rhodes University, South Africa</p>
+                                <small>S2A3 Bronze Medal for Outstanding Research (2022)</small>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>BSc/Hons in Physical Chemistry & Computer Science</h4>
+                                <p>University of Kinshasa, DRC</p>
+                                <small>Prix d'Excellence Académique (2022)</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="awards">
+                        <h3>Notable Awards</h3>
+                        <div class="award-grid">
+                            <div class="award-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>BEBUC Masters Scholarship (2020)</span>
+                            </div>
+                            <div class="award-item">
+                                <i class="fas fa-medal"></i>
+                                <span>S2A3 Bronze Medal (2022)</span>
+                            </div>
+                            <div class="award-item">
+                                <i class="fas fa-award"></i>
+                                <span>Prix d'Excellence Académique (2022)</span>
+                            </div>
+                            <div class="award-item">
+                                <i class="fas fa-research"></i>
+                                <span>Science Discretionary Grant (2022)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="row" id="articles">
-            <h3 style="background-image: linear-gradient(to left, #002E62, green, green, #002E62);"> Articles </h3>
-            <div class="card">
-                <div class="card-header">
-                    1. Interplay between Sigma-hole, Cation-pi and Anion-H-C interactions in [2,2] paracyclophane
-                    complexes
-                </div>
-                <div class="card-body">
-                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Jules Tshishimbi Muya,
-                        Bienfait Kabuyaya Isamura, Issofa Patouossa and
-                        Minh Tho Nguyen
-                    </p>
-                    <span style="font-weight: bold;"> Publisher: </span> Journal of Physical Chemistry A <br>
-                    <span style="font-weight: bold;"> Date: </span> May 2020 <br>
-                    <span style="font-weight: bold;"> Citation: </span> 2 <br>
-                </div>
+    <section id="research" class="research">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research Focus</h2>
+                <p class="section-subtitle">Advancing computational chemistry through machine learning</p>
             </div>
-            <div class="card">
-                <div class="card-header">
-                    2. Structure, stability and bonding of leapfrog B 24 0,±1,±2
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>FFLUX Force Field</h3>
+                    <p>Development of physics-informed machine-learned force fields that maintain quantum mechanical accuracy while achieving classical speed.</p>
+                    <ul class="research-features">
+                        <li>Quantum Theory of Atoms in Molecules (QTAIM) integration</li>
+                        <li>Gaussian Process Regression optimization</li>
+                        <li>Unprecedented temperature robustness</li>
+                    </ul>
                 </div>
-                <div class="card-body">
-                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Jules Tshishimbi Muya,
-                        Bienfait Kabuyaya Isamura, Issofa Patouossa, Minh Tho Nguyen and
-                        Arnout Ceulemans
-                    </p>
-                    <span style="font-weight: bold;"> Publisher: </span> Journal of Computational Chemistry <br>
-                    <span style="font-weight: bold;"> Date: </span> January 2021 <br>
-                    <span style="font-weight: bold;"> Citation: </span> 1 <br>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning Algorithms</h3>
+                    <p>Design and implementation of novel ML algorithms specifically tailored for computational chemistry applications.</p>
+                    <ul class="research-features">
+                        <li>Hyperparameter optimization techniques</li>
+                        <li>Transfer learning methodologies</li>
+                        <li>Metaheuristic optimization approaches</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    3. Regioselectivity, chemical bonding and physical nature of interactions between imidazole and
-                    XAH (X=H, F, Cl, Br, CH 3 ; A=S, Se, Te)
-                </div>
-                <div class="card-body">
-                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura,
-                        Jules Tshishimbi Muya and Kevin Alan Lobb
-                    </p>
-                    <span style="font-weight: bold;"> Publisher: </span> Molecular Physics <br>
-                    <span style="font-weight: bold;"> Date: </span> January 2022 <br>
-                    <span style="font-weight: bold;"> Citation: </span> 1 <br>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    4. New insights into the (a)synchronicity of Diels-Alder reactions: a theoretical study based on the
-                    reaction force analysis and atomic resolution of energy derivatives
-                </div>
-                <div class="card-body">
-                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura
-                        and Kevin Alan Lobb
-                    </p>
-                    <span style="font-weight: bold;"> Publisher: </span> Molecules <br>
-                    <span style="font-weight: bold;"> Date: </span> February 2022 <br>
-                    <span style="font-weight: bold;"> Citation: </span> 0 <br>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    5. Unveiling the reactivity of truxillic and truxinic acids (TXAs): deprotonation, anion…H-O,
-                    cation…O and cation…pi interactions in TXA 0 …Y + and TXA 0 …Z - complexes (Y=Li, Na, K and
-                    Z=F,Cl,Br)
-                </div>
-                <div class="card-body">
-                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura,
-                        Issofa Patouossa, Jules Tshishimbi Muya and Kevin Alan Lobb
-                    </p>
-                    <span style="font-weight: bold;"> Publisher: </span> Structural Chemistry <br>
-                    <span style="font-weight: bold;"> Date: </span> May 2022 <br>
-                    <span style="font-weight: bold;"> Citation: </span> 1 <br>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    6. AMADAR: a python-based package for large scale prediction of Diels-Alder transition state
-                    geometries and IRC path analysis
-                </div>
-                <div class="card-body">
-                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura
-                        and Kevin Alan Lobb
-                    </p>
-                    <span style="font-weight: bold;"> Publisher: </span> Journal of Cheminformatics <br>
-                    <span style="font-weight: bold;"> Date: </span> January 2022 <br>
-                    <span style="font-weight: bold;"> Citation: </span> 0 <br>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    7. Spectro-electrochemical, fluorimetric and biothermodynamic evaluation of pharmacologically
-                    active morpholine scaffold single crystal ligand and its metal(II) complexes: a comparative study on
-                    in-
-                    vitro and in-silico screening towards DNA/BSA/SARS-CoV-19
-                </div>
-                <div class="card-body">
-                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Karunganathan Sakthikumar,
-                        Rui Werner Macedo Krause, Bienfait Kabuyaya Isamura,
-                        Dhaveethu Raja and Shanmuganarayanan Athimoolam
-                    </p>
-                    <span style="font-weight: bold;"> Publisher: </span> Journal of Inorganic Biochemistry <br>
-                    <span style="font-weight: bold;"> Date: </span> August 2022 <br>
-                    <span style="font-weight: bold;"> Citation: </span> 0 <br>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    8. In-silico drug repurposing of anticancer drug 5-FU and analogues against SARS-CoV-2 main
-                    protease: molecular docking, molecular dynamics simulation, pharmacokinetics and chemical reactivity
-                </div>
-                <div class="card-body">
-                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Aristote Matondo, Washington Dendera, Bienfait Kabuyaya Isamura, Koto-te-Nyiwa Ngbolua, Hilaire V Mambo, Mayaliwa Muzomwe and Virima Mudogo
-                    </p>
-                    <span style="font-weight: bold;"> Publisher: </span> Advances and Applications in Bioinformatics and
-                    Chemistry <br>
-                    <span style="font-weight: bold;"> Date: </span> August 2022 <br>
-                    <span style="font-weight: bold;"> Citation: </span> 0 <br>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    9. A multiscale ONIOM study of the Buckminsterfullerene (C60) Diels-Alder reaction: from model
-                    design to reaction path analysis
-                </div>
-                <div class="card-body">
-                    <p class="card-text"> <span style="font-weight: bold;"> Authors: </span> Bienfait Kabuyaya Isamura
-                        and Kevin Alan Lobb
-                    </p>
-                    <span style="font-weight: bold;"> Publisher: </span> Journal of Molecular Modelling <br>
-                    <span style="font-weight: bold;"> Date: </span> (Accepted) <br>
-                    <span style="font-weight: bold;"> Citation: </span> 0 <br>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row" id="contact">
-            <h3 style="background-image: linear-gradient(to left, #002E62, green, green, #002E62);"> Contact </h3>
-            <div class="col-sm-12 col-md-3 card">
-                <div class="card-body">
-                    <i class="bi bi-twitter" id="twitter"></i>
-                    <p class="card-text"> <a href="https://mobile.twitter.com/isamurabienfait" style="text-decoration:none; color:yellow;"> Twitter </a> </p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-3 card">
-                <div class="card-body">
-                    <i class="bi bi-envelope-fill" id="gmail"></i>
-                    <p class="card-text"> <a href="mailto: isamurabft@gmail.com" style="text-decoration:none; color:yellow;"> Gmail </a> </p>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-3 card">
-                <div class="card-body">
-                    <i class="bi bi-linkedin"></i>
-                    <p class="card-text"> <a href=" https://www.linkedin.com/in/bienfait-kabuyaya-isamura-46a6b9154/" style="text-decoration:none; color:yellow;"> LinkedIn </a> </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row" id="mentors">
-            <h3 style="background-image: linear-gradient(to left, #002E62, green, green, #002E62);"> Mentors and
-                Supervisors </h3>
-            <div class="card">
-                <div class="card-body">
-                    <ul style="list-style-type: '*';">
-                        <li> Prof Paul Popelier (S &amp; M) </li>
-                        <li> Prof Minh Tho Nguyen (M) </li>
-                        <li> Prof Alberto Saiani (S) </li>
-                        <li> Prof Virima Mudogo (M) </li>
-                        <li> Prof Kevin Alan Lobb (S) </li>
-                        <li> Prof Jules Muya Tshishimbi (S)</li>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Computational Chemistry</h3>
+                    <p>Application of advanced computational methods to understand molecular behavior and chemical phenomena.</p>
+                    <ul class="research-features">
+                        <li>Molecular dynamics simulations</li>
+                        <li>Electronic structure calculations</li>
+                        <li>Chemical property prediction</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <footer style="color:white; padding:2em; text-align:center; background-color:#001230;">
-            <p>Copyright &copy; 2022 Bienfait Kabuyaya Isamura </p>
-        </footer>
-    </div>
-</body>
-<script>
-</script>
+    </section>
 
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Publications</h2>
+                <p class="section-subtitle">Recent contributions to peer-reviewed journals</p>
+            </div>
+            <div class="publications-container">
+                <div class="publication-item featured">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Unprecedented robustness of physics-informed atomic energy models at and beyond room temperature</h3>
+                        <p class="pub-authors"><strong>Isamura, B.</strong>, Aten, O., Nosratjoo, M., Popelier, P.</p>
+                        <p class="pub-journal">ChemRxiv Preprint</p>
+                        <div class="pub-badge">Featured</div>
+                    </div>
+                </div>
+                
+                <div class="publication-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">CHQuant: A Protocol for Quantifying Conformational Sampling with Convex Hulls</h3>
+                        <p class="pub-authors">Chung, J., <strong>Isamura, B.</strong>, Popelier, P.</p>
+                        <p class="pub-journal">ChemRxiv Preprint</p>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Accurate prediction of electron correlation energies of topological atoms by delta learning from the Müller approximation</h3>
+                        <p class="pub-authors">Bandyopadhyay, P., <strong>Isamura, B.K.</strong>, Popelier, P.L.</p>
+                        <p class="pub-journal">The Journal of Chemical Physics, 162(7)</p>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Transfer learning of hyperparameters for fast construction of anisotropic GPR models: design and application to the machine-learned force field FFLUX</h3>
+                        <p class="pub-authors"><strong>Isamura, B.K.</strong>, Popelier, P.L.</p>
+                        <p class="pub-journal">Physical Chemistry Chemical Physics, 26(36), 23677-23691</p>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Incorporating Noncovalent Interactions in Transfer Learning Gaussian Process Regression Models for Molecular Simulations</h3>
+                        <p class="pub-authors">Brown, M.L., <strong>Isamura, B.K.</strong>, Skelton, J.M., Popelier, P.L.</p>
+                        <p class="pub-journal">Journal of Chemical Theory and Computation, 20(14), 5994-6008</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-links">
+                <a href="https://scholar.google.co.uk/citations?hl=en&user=Cnf8hRUAAAAJ" class="link-btn" target="_blank">
+                    <i class="fab fa-google"></i> Google Scholar
+                </a>
+                <a href="https://www.researchgate.net/profile/Bienfait-Isamura?ev=hdr_xprf" class="link-btn" target="_blank">
+                    <i class="fab fa-researchgate"></i> ResearchGate
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Events & Conferences</h2>
+                <p class="section-subtitle">Upcoming presentations and academic events</p>
+            </div>
+            <div class="events-placeholder">
+                <div class="placeholder-content">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Events Coming Soon</h3>
+                    <p>Stay tuned for upcoming conferences, workshops, and seminars where I'll be presenting my latest research findings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's collaborate on advancing computational chemistry</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>bienfait.isamura@postgrad.manchester.ac.uk</p>
+                            <p>bki.stoicprogrammer@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+44 7496 531670</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Institution</h3>
+                            <p>University of Manchester</p>
+                            <p>Department of Chemistry</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="supervisors">
+                    <h3>Research Supervisors</h3>
+                    <div class="supervisor-list">
+                        <div class="supervisor">
+                            <h4>Prof. Paul Popelier</h4>
+                            <p>Primary Supervisor</p>
+                            <a href="https://scholar.google.co.uk/citations?user=VlFNR0wAAAAJ&hl=en&oi=ao" target="_blank">
+                                <i class="fab fa-google"></i> Google Scholar
+                            </a>
+                        </div>
+                        <div class="supervisor">
+                            <h4>Prof. Kevin Lobb</h4>
+                            <p>Co-Supervisor</p>
+                            <a href="https://scholar.google.co.uk/citations?user=QalU9CIAAAAJ&hl=en&oi=ao" target="_blank">
+                                <i class="fab fa-google"></i> Google Scholar
+                            </a>
+                        </div>
+                        <div class="supervisor">
+                            <h4>Prof. Jules Tshishimbi Muya</h4>
+                            <p>Co-Supervisor</p>
+                            <a href="https://scholar.google.co.uk/citations?user=79EZlF4AAAAJ&hl=en&oi=ao" target="_blank">
+                                <i class="fab fa-google"></i> Google Scholar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Bienfait Kabuyaya Isamura. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://scholar.google.co.uk/citations?hl=en&user=Cnf8hRUAAAAJ" target="_blank">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Bienfait-Isamura?ev=hdr_xprf" target="_blank">
+                        <i class="fab fa-researchgate"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Navigation Active State on Scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.research-card, .publication-item, .contact-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Image Carousel Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const carouselSlide = document.querySelector('.carousel-slide');
+            const carouselImages = document.querySelectorAll('.carousel-image');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const dots = document.querySelectorAll('.dot');
+            
+            let counter = 0;
+            const size = carouselImages[0].clientWidth;
+
+            // Update image position and dot active state
+            const updateCarousel = () => {
+                carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[counter].classList.add('active');
+            };
+
+            // Button listeners
+            nextBtn.addEventListener('click', () => {
+                counter = (counter + 1) % carouselImages.length;
+                updateCarousel();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                counter = (counter - 1 + carouselImages.length) % carouselImages.length;
+                updateCarousel();
+            });
+
+            // Dot listeners
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    counter = index;
+                    updateCarousel();
+                });
+            });
+
+            // Auto-advance carousel
+            let autoAdvance = setInterval(() => {
+                counter = (counter + 1) % carouselImages.length;
+                updateCarousel();
+            }, 5000); // Change image every 5 seconds
+
+            // Pause auto-advance on hover
+            const carouselContainer = document.querySelector('.image-carousel-container');
+            carouselContainer.addEventListener('mouseenter', () => {
+                clearInterval(autoAdvance);
+            });
+
+            carouselContainer.addEventListener('mouseleave', () => {
+                autoAdvance = setInterval(() => {
+                    counter = (counter + 1) % carouselImages.length;
+                    updateCarousel();
+                }, 5000);
+            });
+            
+            // Resize listener for responsive carousel
+            window.addEventListener('resize', () => {
+                const newSize = carouselImages[0].clientWidth;
+                carouselSlide.style.transform = 'translateX(' + (-newSize * counter) + 'px)';
+            });
+        });
+    </script>
+</body>
 </html>
